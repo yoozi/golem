@@ -1,0 +1,35 @@
+{
+    "name": "yoozi/email",
+    "description": "Simple toolkits to help processing email related tasks, such as a Email Address Parser and etc.",
+    "keywords": ["email", "email address parser"],
+    "homepage": "https://github.com/yoozi/email",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Saturn HU",
+            "email": "yangg.hu@yoozi.cn",
+            "homepage": "http://www.yoozi.cn/"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "egulias/email-validator": "~1.0"
+    },
+    "suggest": {
+        "egulias/email-validator": "Strict (RFC compliant) email validation"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Yoozi\\Email": "lib/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}

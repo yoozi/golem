@@ -1,7 +1,7 @@
 {
     "name": "yoozi/email",
     "description": "Simple toolkits to help processing email related tasks, such as a Email Address Parser and etc.",
-    "keywords": ["email", "email address parser"],
+    "keywords": ["golem", "email"],
     "homepage": "https://github.com/yoozi/email",
     "type": "library",
     "license": "MIT",
@@ -21,12 +21,14 @@
     },
     "autoload": {
         "psr-0": {
-            "Yoozi\\Email": "lib/"
+            "Yoozi\\Email": ""
         }
     },
+    "target-dir": "Yoozi/Email",
     "extra": {
         "branch-alias": {
             "dev-master": "1.0.x-dev"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }

@@ -1,6 +1,6 @@
 {
     "name": "yoozi/golem",
-    "description": "Daily PHP development toolkits for Yoozi RD team.",
+    "description": "PHP development toolkit for Yoozi RD team.",
     "keywords": ["yoozi", "email"],
     "license": "MIT",
     "authors": [

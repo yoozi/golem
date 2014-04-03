@@ -18,8 +18,8 @@ use Illuminate\Support\Contracts\JsonableInterface;
  *
  * @author Saturn HU <yangg.hu@yoozi.cn>
  */
-class Parser implements ArrayableInterface, JsonableInterface {
-
+class Parser implements ArrayableInterface, JsonableInterface
+{
     /**
      * A list of common used email providers.
      *
@@ -60,13 +60,12 @@ class Parser implements ArrayableInterface, JsonableInterface {
     /**
      * Create a new email address parser.
      *
-     * @param  array  $providers
+     * @param  array $providers
      * @return void
      */
     public function __construct(array $providers = array())
     {
-        if ($providers)
-        {
+        if ($providers) {
             $this->providers = $providers;
         }
     }
@@ -74,13 +73,12 @@ class Parser implements ArrayableInterface, JsonableInterface {
     /**
      * Parse a email address, return the parsed parts.
      *
-     * @param  string  $email
+     * @param  string $email
      * @return array
      */
     public function parse($email)
     {
-        if ( ! filter_var($email, FILTER_VALIDATE_EMAIL))
-        {
+        if ( ! filter_var($email, FILTER_VALIDATE_EMAIL)) {
             throw new \InvalidArgumentException(
                 "\$email($email) is not a valid email address."
             );
@@ -108,7 +106,7 @@ class Parser implements ArrayableInterface, JsonableInterface {
     /**
      * The parsed result in json.
      *
-     * @param  int  $options
+     * @param  int    $options
      * @return string
      */
     public function toJson($options = 0)

@@ -50,6 +50,11 @@ class Parser implements ArrayableInterface, JsonableInterface {
         '21cn.com'            => 'http://mail.21cn.com'
     );
 
+    /**
+     * Holds the parsed segments.
+     *
+     * @var array
+     */
     protected $parts = array();
 
     /**
@@ -104,7 +109,7 @@ class Parser implements ArrayableInterface, JsonableInterface {
      * The parsed result in json.
      *
      * @param  int  $options
-     * @return json
+     * @return string
      */
     public function toJson($options = 0)
     {

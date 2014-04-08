@@ -1,7 +1,7 @@
 {
     "name": "yoozi/email",
-    "description": "Simple toolkits to help processing email related tasks, such as a Email Address Parser and etc.",
-    "keywords": ["golem", "email"],
+    "description": "PHP library to extract the metadata from a public web page and/or summarize it.",
+    "keywords": ["golem", "summarize", "webpage", "metadata"],
     "homepage": "http://golem.yoozi.cn/",
     "type": "library",
     "license": "MIT",
@@ -21,10 +21,10 @@
     },
     "autoload": {
         "psr-0": {
-            "Yoozi\\Email": ""
+            "Yoozi\\Miner": ""
         }
     },
-    "target-dir": "Yoozi/Email",
+    "target-dir": "Yoozi/Miner",
     "extra": {
         "branch-alias": {
             "dev-master": "1.0.x-dev"

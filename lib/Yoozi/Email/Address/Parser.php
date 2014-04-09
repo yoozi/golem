@@ -25,7 +25,7 @@ class Parser implements ArrayableInterface, JsonableInterface
      *
      * @var array
      */
-    protected $providers = array(
+    public static $providers = array(
         '126.com'        => 'http://www.126.com',
         '139.com'        => 'http://mail.139.com',
         '163.com'        => 'http://www.163.com',
@@ -85,7 +85,7 @@ class Parser implements ArrayableInterface, JsonableInterface
     public function __construct(array $providers = array())
     {
         if ($providers) {
-            $this->providers = $providers;
+            static::$providers = $providers;
         }
     }
 
@@ -106,10 +106,20 @@ class Parser implements ArrayableInterface, JsonableInterface
         $email = strtolower($email);
         list($local, $domain) = explode('@', $email);
 
-        $listed = isset($this->providers[$domain]);
-        $url = $listed ? $this->providers[$domain] : 'http://mail.' . $domain;
+        $listed = isset(static::$providers[$domain]);
+        $url = $listed ? static::$providers[$domain] : 'http://mail.' . $domain;
 
         return $this->parts = compact('email', 'local', 'domain', 'url', 'listed');
+    }
+
+    /**
+     * Get the list of providers.
+     *
+     * @return array
+     */
+    public function getProviders()
+    {
+        return static::$providers;
     }
 
     /**

@@ -14,6 +14,11 @@ class EmailAddressParserTest extends PHPUnit_Framework_TestCase {
         $this->parser = new Parser;
     }
 
+    public function teardown()
+    {
+        unset($this->parser);
+    }
+
     public function testWithValidEmailInList()
     {
         $email = 'yangg.hu@gmail.com';
@@ -47,5 +52,15 @@ class EmailAddressParserTest extends PHPUnit_Framework_TestCase {
     public function testThrowExceptionWhenEmailIsInvlid()
     {
         $this->parser->parse('example.com');
+    }
+
+    public function testBasicMethods()
+    {
+        $dict = array(
+            'example.com' => 'https://mail.example.com'
+        );
+
+        $parser = new Parser($dict);
+        $this->assertEquals($parser->getProviders(), $dict);
     }
 }

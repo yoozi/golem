@@ -97,7 +97,7 @@ class Parser implements ArrayableInterface, JsonableInterface
      */
     public function parse($email)
     {
-        if ( ! filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        if (! filter_var($email, FILTER_VALIDATE_EMAIL)) {
             throw new \InvalidArgumentException(
                 "\$email($email) is not a valid email address."
             );

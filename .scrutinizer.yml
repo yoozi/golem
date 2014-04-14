@@ -3,6 +3,8 @@
 before_commands:
     - composer install --dev
 tools:
+    external_code_coverage:
+        timeout: 600
     php_cs_fixer:
         extensions:
             - php

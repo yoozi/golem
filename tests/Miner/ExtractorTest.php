@@ -25,18 +25,18 @@ class ExtractorTest extends PHPUnit_Framework_TestCase {
         $this->extractor->getConfig()->set('parser', 'meta');
         $meta = $this->extractor->fromSource($this->file('utf-8'))->run();
 
-        $this->assertEquals($meta['title'], '【专治不明觉厉】之“大数据”');
+        $this->assertEquals($meta['title'], '剖析乐视X50air的成本魔术：2999超低价是这么实现');
         $this->assertEquals($meta['author'], '虎嗅网');
         $this->assertEquals($meta['keywords'], explode(',', '科技资讯,商业评论,明星公司动态,宏观趋势,精选,有料,干货,有用,细节,内幕'));
-        $this->assertEquals($meta['description'], '大数据，官方定义是指那些数据量特别大、数据类别特别复杂的数据集。大数据的主要特点为数据量大，数据类别复杂，数据处理速度快和数据真实性高。');
+        $this->assertEquals($meta['description'], '@智能电视行业观察：乐视的X50 air弃日韩屏改用台湾屏；弃1+1芯片平台改单一芯片方案；把前框后盖做进外观；弃富士康改TPV；强制新购机用户购买两年观看费，做整机利润补充……');
         $this->assertEquals($meta['image'], '');
 
         $meta = $this->extractor->fromSource($this->file('utf-8'))->run(function($meta) {
-            $meta['title'] = 'replaced';
+            $meta['title'] = 'replaced title';
             return $meta;
         });
 
-        $this->assertEquals($meta['title'], 'replaced');
+        $this->assertEquals($meta['title'], 'replaced title');
 
         $og = $this->extractor->fromSource($this->file('utf-8-with-og'))->run();
 
@@ -47,8 +47,36 @@ class ExtractorTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals($og['image'], 'http://l.yimg.com/bt/api/res/1.2/vQUly0xl2admpd8f4_adyQ--/YXBwaWQ9eW5ld3M7cT04NTt3PTYwMA--/http://media.zenfs.com/en_us/News/ap_webfeeds/dafd55e7b1230e0c500f6a706700734c.jpg');
     }
 
-    private function file($name)
+    public function testParseUTF8SourceWithHybridParser()
     {
-        return file_get_contents(__DIR__ . '/fixtures/' . $name . '.html');
+        $file = $this->file('utf-8');
+
+        $this->extractor->getConfig()->set('parser', 'hybrid');
+        $this->extractor->getConfig()->set('strip_tags', true);
+        $meta = $this->extractor->fromSource($file)->run();
+
+        $this->assertEquals($meta['title'], '剖析乐视X50air的成本魔术：2999超低价是这么实现');
+        $this->assertEquals($meta['author'], '虎嗅网');
+        $this->assertEquals($meta['keywords'], explode(',', '科技资讯,商业评论,明星公司动态,宏观趋势,精选,有料,干货,有用,细节,内幕'));
+        $this->assertEquals($meta['image'], 'http://img.huxiu.com/portal/201404/13/075642tmtperw23rvpt3n5.png');
+        $this->assertEquals(trim($meta['description']), trim($this->file('utf-8-readability', '.txt')));
+    }
+
+    public function testParseRemoteUrlWithHybridParser()
+    {
+        $this->extractor->getConfig()->set('parser', 'hybrid');
+        $this->extractor->getConfig()->set('strip_tags', true);
+
+        $meta = $this->extractor->fromUrl('http://www.example.com/', new Curl)->run();
+        $this->assertEquals($meta['title'], 'Example Domain');
+        $this->assertEquals($meta['url'], 'http://www.example.com/');
+        $this->assertEquals($meta['host'], 'http://www.example.com');
+        $this->assertEquals($meta['domain'], 'example.com');
+        $this->assertEquals($meta['favicon'], 'http://www.google.com/s2/favicons?domain=example.com');
+    }
+
+    private function file($name, $ext = '.html')
+    {
+        return file_get_contents(__DIR__ . '/fixtures/' . $name . $ext);
     }
 }

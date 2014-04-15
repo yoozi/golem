@@ -1,0 +1,1461 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+	<meta name="viewport" content="width=720"/>
+  <title>John Resig -   Write Code Every Day</title>
+  <link href="/css/style.css" media="screen" rel="Stylesheet" type="text/css"/>
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/JohnResig" />
+</head>
+<body>
+<div id="wrapper">
+<div id="head" class="other">
+    <div class="wrap">
+	<div class="nav">
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/blog/">Blog</a></li>
+			<li><a href="/research/">Research</a></li>
+			<li><a rel="author" href="/about/">About Me</a></li>
+		</ul>
+	</div>
+	<div class="side">
+		<a href="http://ejohn.org/about/"><img src="/files/jeresig-full-profile-2013.48.jpg" class="logo" alt="John Resig" width="48" height="48"/></a>
+		<div class="text">
+			<span class="name"><strong>John</strong> Resig</span><br/>
+			<a rel="author" href="/about/">Contact</a>,
+			<a href="http://eepurl.com/ywvS9">Subscribe</a>
+		</div>
+	</div>
+    </div>
+</div>
+<div id="wrap">
+	<div id="body"><div class="wrap">
+<h2>  Write Code Every Day</h2><br/>
+
+
+
+
+				<div class="postentry">
+
+
+<p>Last fall, work on my <a href="https://github.com/jeresig">coding side projects</a> came to a head: I wasn&#8217;t making adequate progress and I couldn&#8217;t find a way to get more done without sacrificing my ability to do effective work at <a href="https://www.khanacademy.org/">Khan Academy</a>.</p>
+<p>There were a few major problems with how I was working on my side projects. I was primarily working on them during the weekends and sometimes in the evenings during the week. This is a strategy that does not work well for me, as it turns out. I was burdened with an incredible amount of stress to try and complete as much high quality work as possible during the weekend (and if I was unable to it felt like a failure). This was a problem as there&#8217;s no guarantee that every weekend will be free &#8211; nor that I&#8217;ll want to program all day for two days (removing any chance of relaxation or doing anything fun).</p>
+<p>There&#8217;s also the issue that a week between working on some code is a long time, it&#8217;s very easy to forget what you were working on or what you left off on (even if you keep notes). Not to mention if you miss a weekend you end up with a two week gap as a result. That massive multi-week context switch can be deadly (I&#8217;ve had many side projects die due to attention starvation like that).</p>
+<p>Inspired by the incredible work that <a href="http://jenniferdewalt.com/">Jennifer Dewalt</a> completed last year, in which she taught herself programming by building 180 web sites in 180 days, I felt compelled to try a similar tactic: working on my side projects every single day.</p>
+<p><img src="http://i.imgur.com/SsevWYY.jpg" class="header-img"/>
+<div class="header-caption">Illustration by <a href="http://www.stevenchasestudios.com/">Steven Resig</a></div>
+<p>I decided to set a couple rules for myself:</p>
+<ol>
+<li>I must write code every day. I can write docs, or blog posts, or other things but it must be in addition to the code that I write.</li>
+<li>It must be useful code. No tweaking indentation, no code re-formatting, and if at all possible no refactoring. (All these things are permitted, but not as the exclusive work of the day.)</li>
+<li>All code must be written before midnight.</li>
+<li>The code must be Open Source and up on Github.</li>
+</ol>
+<p>Some of these rules were arbitrary. The code doesn&#8217;t technically need to be written before midnight of the day of but I wanted to avoid staying up too late writing sloppy code. Neither does the code have to be Open Source or up on Github. This just forced me to be more mindful of the code that I was writing (thinking about reusability and deciding to create modules earlier in the process).</p>
+<p>Thus far I&#8217;ve been very successful, I&#8217;m nearing 20 weeks of consecutive work. I wanted to write about it as it&#8217;s completely changed how I code and has had a substantial impact upon my life and psyche.</p>
+<p><center><a href="https://github.com/jeresig"><img src="http://i.imgur.com/5zjbxsz.jpg" style="border:0px;max-width:100%;"/></a></center></p>
+<p>With this in mind a number of interesting things happened as a result of this change in habit:</p>
+<p><b>Minimum viable code.</b> I was forced to write code for no less than 30 minutes a day. (It&#8217;s really hard to write meaningful code in less time, especially after remembering where you left off the day before.) Some week days I work a little bit more (usually no more than an hour) and on weekends I&#8217;m sometimes able to work a full day.</p>
+<p><b>Code as habit.</b> It&#8217;s important to note that that I don&#8217;t particularly care about the outward perception of the above Github chart. I think that&#8217;s the most important take away from this experiment: this is about a change that you&#8217;re making in your life for yourself not a change that you&#8217;re making to satisfy someone else&#8217;s perception of your work. The same goes for any form of dieting or exercise: if you don&#8217;t care about improving yourself then you&#8217;ll never actually succeed.</p>
+<p><b>Battling anxiety.</b> Prior to starting this experiment I would frequently feel a high level of anxiety over not having completed &#8220;enough&#8221; work or made &#8220;enough&#8221; progress (both of which are relatively unquantifiable as my side projects had no specific deadlines). I realized that <b>the <em>feeling</em> of making progress is just as important as making actual progress</b>. This was an eye-opener. Once I started to make consistent progress every day the anxiety started to melt away. I felt at peace with the amount of work that I was getting done and I no longer had the over-bearing desire to frantically get any work done.</p>
+<p><b>Weekends.</b> Getting work done on weekends use to be absolutely critical towards making forward momentum (as they were, typically, the only time in which I got significant side project coding done). That&#8217;s not so much the case now &#8211; and that&#8217;s a good thing. Building up a weeks-worth of expectations about what I should accomplish during the weekend only ended up leaving me disappointed. I was rarely able to complete all the work that I wanted and it forced me to reject other weekend activities that I enjoyed (eating dim sum, visiting museums, going to the park, spending time with my partner, etc.) in favor of getting more work done. I strongly feel that while side projects are really important they should not be to the exclusion of life in general.</p>
+<p><b>Background processing.</b> An interesting side effect of writing side project code every day is that your current task is frequently running in the back of your mind. Thus when I go for a walk, or take a shower, or any of the other non-brain-using activities I participate in, I&#8217;m thinking about what I&#8217;m going to be coding later and finding a good way to solve that problem. This did not happen when I was working on the code once a week, or every other week. Instead that time was consumed thinking about some other task or, usually, replaced with anxiety over not getting any side project work done.</p>
+<p><b>Context switch.</b> There&#8217;s always going to be a context switch cost when resuming work on a side project. Unfortunately it&#8217;s extremely hard to resume thinking about a project after an entire week of working on another task. Daily work has been quite helpful in this regard as the time period between work is much shorter, making it easier to remember what I was working on.</p>
+<p><b>Work balance.</b> One of the most important aspects of this change was in simply learning how to better balance work/life/side project. Knowing that I was going to <em>have to</em> work on the project every single day I had to get better at balancing my time. If I was scheduled to go out in the evening, and not get back until late, then I would need to work on my side project early in the day, before starting my main Khan Academy work. Additionally if I hadn&#8217;t finished my work yet, and I was out late, then I&#8217;d hurry back home to finish it up (instead of missing a day). I should note that I&#8217;ve been finding that I have less time to spend on hobbies (such as woodblock printing) but that&#8217;s a reasonable tradeoff that I&#8217;ll need to live with.</p>
+<p><b>Outward perception.</b> This has all had the added benefit of communicating this new habit externally. My partner understands that I have to finish this work every day, and thus activities sometimes have to be scheduled around it. It&#8217;s of considerable comfort to be able to say &#8220;Yes, we can go out/watch a movie/etc. but I have to get my coding in later&#8221; and have that be understood and taken into consideration.</p>
+<p><b>How much code was written?</b> I have a hard time believing how much code I&#8217;ve written over the past few months. I created a couple new web sites, re-wrote some frameworks, and created a ton of new node modules. I&#8217;ve written so much I sometimes forget the things I&#8217;ve made &#8211; work from even a few weeks prior seem like a distant memory. I&#8217;m extremely pleased with the amount of work that I&#8217;ve gotten done.</p>
+<p>I consider this change in habit to be a massive success and hope to continue it for as long as I can. In the meantime I&#8217;ll do all that I can to recommend this tactic to others who wish to get substantial side project work done. <a href="http://ejohn.org/about/">Let me know</a> if this technique does, or doesn&#8217;t, work for you &#8211; I&#8217;m very interested in hearing additional anecdotes!</p>
+<p><small><a href="https://news.ycombinator.com/item?id=7568675">Discuss this post on Hacker News.</a></small></p>
+
+
+				</div>
+
+		<p><small><strong>Posted:</strong> April 10th, 2014				</small>
+		<!--&#183; <a href="http://ejohn.org/blog/write-code-every-day/" class="retweet" title="Write Code Every Day"></a>-->
+		</p>
+				<!--
+				<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://ejohn.org/blog/write-code-every-day/"
+    dc:identifier="http://ejohn.org/blog/write-code-every-day/"
+    dc:title="Write Code Every Day"
+    trackback:ping="http://ejohn.org/blog/write-code-every-day/trackback/" />
+</rdf:RDF>				-->
+				<hr/>
+                                <form action="http://jquery.us1.list-manage1.com/subscribe/post?u=9d97dbe5f30bdee8c85a45e9e&amp;id=7257ed4444" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                        <p><label for="mce-EMAIL">Subscribe for email updates:</label>
+                                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></p>
+                                </form>
+		<p><small>If you particularly enjoy my work, I appreciate donations <a href="https://www.gittip.com/jeresig">given with Gittip</a>.</small></p>
+
+<!-- You can start editing here. -->
+
+
+	<h4 id="comments">
+	66 Comments		</h4>
+
+	<ol id="commentlist" style="">
+
+
+		<li class="alt " id="comment-394229">
+
+		<h3 class="commenttitle"><b><a href='http://JohnMarkHowell.com' rel='external nofollow' class='url'>John Mark Howell</a></b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394229" title="Permanent link to this comment">1:41 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>This is one of the best posts I have seen in a long time!</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394230">
+
+		<h3 class="commenttitle"><b><a href='http://www.pgbovine.net' rel='external nofollow' class='url'>Philip Guo</a></b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394230" title="Permanent link to this comment">1:45 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Great! Like a form of Seinfeld&#8217;s Don&#8217;t Break The Chain for hobbies:<br />
+<a href="http://lifehacker.com/5886128/how-seinfelds-productivity-secret-fixed-my-procrastination-problem" rel="nofollow">http://lifehacker.com/5886128/how-seinfelds-productivity-secret-fixed-my-procrastination-problem</a></p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394231">
+
+		<h3 class="commenttitle"><b><a href='https://github.com/rrbrambley' rel='external nofollow' class='url'>Rob Brambley</a></b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394231" title="Permanent link to this comment">2:12 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>I spent the last few months doing this and I could not agree more with what you&#8217;ve written. I had a 161 day streak, and I believe it had a really positive effect on my life for many of the same reasons you mentioned – I was better at managing my time, I had less anxiety, and I infrequently had trouble picking up where I left off. Last week, I got back from a ten day trip, and it has been very, very hard to achieve the focus I had during this streak. This is actually kind of depressing, and leaves me wishing I had set aside more time during my trip to do a little bit of coding each day. Before taking some days off from coding, I did not feel exhausted or burnt out, but as friends suggested, it seemed like it would be a good idea to take a break, just for the sake of giving my mind a rest and making sure I wasn&#8217;t overworking myself without realizing it.</p>
+<p>In retrospect, I do not regret taking the time off – I knew it was inevitable that I&#8217;d need to go some time without coding. But, the next time I do go on a trip or find myself without access to my computer for a while, I think I am going to plan ahead a little better, and think of ways to keep the projects/code/ideas fresh in my head so that it&#8217;s not so hard to pick up where I left off. Perhaps this just means writing ideas down on paper on a daily basis, or asking people around me what they think of the latest UI in my app – stuff like this will hopefully help to keep it all fresh in my head.</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394233">
+
+		<h3 class="commenttitle"><b><a href='http://blog.adnansiddiqi.me' rel='external nofollow' class='url'>Adnan</a></b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394233" title="Permanent link to this comment">2:25 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>I am sure you think of project ideas way ahead than you open IDE</p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394234">
+
+		<h3 class="commenttitle"><b>Doggy</b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394234" title="Permanent link to this comment">2:37 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Dogfood projects are the best for this.</p>
+<p>For something you yourself use every day, you always know what you need to work on next: it&#8217;s whatever bugged you about it the most yesterday.  You also get immediate feedback on what you wrote yesterday: you get to use it tomorrow.  It&#8217;s a daily feedback loop both of incentive, and of productivity.</p>
+<p>I find continuous improvement is difficult for things that I don&#8217;t use myself.  It means to figure out what to work on, I need to guess, or gather data from users, or listen to a product manager.  It means I don&#8217;t get to see yesterday&#8217;s improvements, except indirectly.  It means yesterday&#8217;s work doesn&#8217;t help make today&#8217;s work any easier.</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394235">
+
+		<h3 class="commenttitle"><b><a href='http://virendra.me' rel='external nofollow' class='url'>Virendra Rajput</a></b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394235" title="Permanent link to this comment">2:46 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Hi John, </p>
+<p>this is something I&#8217;ve been trying out recently. But I haven&#8217;t been able to keep up with the pace. Since, the anxiety of missing one day, kills me. It just breaks the chain. I&#8217;ve been trying hard to get time off&#8217;s on evenings, but it&#8217;s not always possible.</p>
+<p>I might try the early morning coding. Since, its lot easier to start coding with a fresh mind.</p>
+<p>Thanks a lot for this post. It will definitely gives me helpful pointers. :-)</p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394237">
+
+		<h3 class="commenttitle"><b>Akshay</b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394237" title="Permanent link to this comment">2:51 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Very inspiring John. Nice points on how to keep the streak continuing</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394238">
+
+		<h3 class="commenttitle"><b>Max</b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394238" title="Permanent link to this comment">3:06 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Very, very, very inspiring. I&#8217;m in the same situation as yours before your started your journey.</p>
+<p>I&#8217;m going to try this experience starting tomorrow.</p>
+<p>Thank you.</p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394239">
+
+		<h3 class="commenttitle"><b><a href='http://antjanus.com/' rel='external nofollow' class='url'>Antonin Januska</a></b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394239" title="Permanent link to this comment">3:23 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>I&#8217;m actually starting off a similar project, came up with it last week: the 30 days of Git Commits; however, I like your 20 weeks better.</p>
+<p>The main issue I have with structuring your life this way is the pure amount of time you&#8217;re spending on coding. I work as a programmer in my day job, that&#8217;s 7-8 hours of solid coding a day (with breaks of course). </p>
+<p>Adding another 30 minutes on top of that should be fine but never at the cost of another hobby. At least to me, because then my &#8220;side projects&#8221; begin to feel like work, and I do enough of that already ;)</p>
+<p>What I started doing last year (or maybe the year prior to that) is a concept of &#8220;monthly goals (<a href="http://renewlifebalance.com/?/monthly-goals/" rel="nofollow">http://renewlifebalance.com/?/monthly-goals/</a> &lt;- wrote about it here). Which is basically the idea of picking a subject, whatever hobby, or work, or whatever, and focusing on just that for a month. And the focus greatly helps alleviate the ADHD-type behavior where you have time and either mis-spend it or can&#039;t figure out what to focus on.</p>
+<p>It&#039;s the same concept as writers doing NaNoWriMo, or coders doing a 30-day git commit sprint. </p>
+<p>I hope you get back to the woodblock printing and enjoy that for a change! :)</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394240">
+
+		<h3 class="commenttitle"><b><a href='http://skyul.com' rel='external nofollow' class='url'>Skyul</a></b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394240" title="Permanent link to this comment">3:24 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Inspiring indeed, but you should mention that even if you write daily code, never forget about your personal life, including friends and family.<br />
+After all you are just chasing your dream, but don&#8217;t forget about others.</p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394241">
+
+		<h3 class="commenttitle"><b><a href='http://joaonetto.me' rel='external nofollow' class='url'>João Netto</a></b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394241" title="Permanent link to this comment">3:27 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>I&#8217;m doing almost the same except by the fact that i&#8217;m not FORCING to get something done every single day.</p>
+<p>Almost ever, my weekends are totally designed to I have some fun and if i start to write something i bought me some prize.</p>
+<p>Nice post!</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394242">
+
+		<h3 class="commenttitle"><b><a href='http://picandocodigo.net' rel='external nofollow' class='url'>Fernando Briano</a></b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394242" title="Permanent link to this comment">3:29 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>I&#8217;ve been trying this same thing since March 1st!<br />
+<a href="https://github.com/picandocodigo" rel="nofollow">https://github.com/picandocodigo</a></p>
+<p>I got a 35 days streak, took two days off, and now continue with a new streak. But I&#8217;ve seen all the advantages you mention on this blog post in my daily routine. Mostly background processing, since I&#8217;m always thinking of new ideas to implement both as new projects or as improvements to my current projects.</p>
+<p>I still work on refactors, docs and similar stuff some of the days. I also love midnight coding, though sometimes it extends to 4am coding and I am not so happy the other day when I check out the code I wrote at 4am :P<br />
+Those are the parts I need to improve the most, but I fully agree with the post and the advantages of writing code every day.</p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394244">
+
+		<h3 class="commenttitle"><b><a href='http://www.mosquito.pro.br' rel='external nofollow' class='url'>Paulo Eduardo Neves</a></b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394244" title="Permanent link to this comment">3:49 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>I&#8217;ll follow your idea. I loved the commit chart. Does anybody here knows if BitBucket also has a chart like this one?</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394245">
+
+		<h3 class="commenttitle"><b><a href='http://ajlopez.wordpress.com' rel='external nofollow' class='url'>Angel "Java" Lopez</a></b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394245" title="Permanent link to this comment">3:59 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Good!</p>
+<p>Always Be Coding ;-)</p>
+<p><a href="http://ajlopez.wordpress.com/2014/04/05/always-be-coding/" rel="nofollow">http://ajlopez.wordpress.com/2014/04/05/always-be-coding/</a></p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394246">
+
+		<h3 class="commenttitle"><b>Brad L</b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394246" title="Permanent link to this comment">4:07 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Great Post.  I am struggling with this exact problem.  The anxiety is killing me.  I am going to put these principles in place immediately!</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394247">
+
+		<h3 class="commenttitle"><b>Paul</b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394247" title="Permanent link to this comment">4:08 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>On average, how long do you spend everyday on your side-coding? Do you try to set a reasonable minimum and maximum?</p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394248">
+
+		<h3 class="commenttitle"><b>Doggy</b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394248" title="Permanent link to this comment">5:04 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Antonin: Where do you work?  I want to work there!  I&#8217;ve never had any programming job where even 50% of my day was spent writing software.</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394250">
+
+		<h3 class="commenttitle"><b><a href='http://tusharsaxena.com' rel='external nofollow' class='url'>Tushar S</a></b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394250" title="Permanent link to this comment">5:35 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>I think this is called the Jeremy Seinfeld &#8216;Chains&#8217; method &#8211; as in don&#8217;t break the chain!<br />
+Although github already shows us the chain, some people could use <a href="https://chains.cc/" rel="nofollow">https://chains.cc/</a><br />
+to track various activities.<br />
+The main problem for me has been to start and stick with this for a few days at least, and then the habit establishes itself. It&#8217;s the first week that&#8217;s crucial.</p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394251">
+
+		<h3 class="commenttitle"><b><a href='http://blog.chewxy.com' rel='external nofollow' class='url'>Chewxy</a></b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394251" title="Permanent link to this comment">5:43 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Hey John,</p>
+<p>So how did you get into the habit of it? Did you just sit down and say &#8220;I&#8217;m not leaving this desk until I have some code done&#8221;?</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394252">
+
+		<h3 class="commenttitle"><b><a href='http://www.patrickford.com' rel='external nofollow' class='url'>Patrick Ford</a></b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394252" title="Permanent link to this comment">6:07 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>I recently started the same discipline.  I spent a good part of my career writing code then worked my way up to executive management and stopped.  After several years as Director of this, or VP of that, my skills had eroded.  Late last year I decided to take a sabbatical and get back into the game by applying to Hack Reactor in SF.  It was an intense period of two months of pre-course work (18 Code School classes and a bunch of coding assignments), followed by three months of intense work on site where we went 11+ hours a day for 6 days a week.  One of the disciplines there is to work on a short &#8220;toy problem&#8221; every morning for 30-60 minutes.  Although I finished the program recently I am keeping up that practice as well as working on my real project, a new startup for social video.  I&#8217;ll never stop coding again!</p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394253">
+
+		<h3 class="commenttitle"><b>teoman</b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394253" title="Permanent link to this comment">6:37 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Thanks so much, great blog post!</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394254">
+
+		<h3 class="commenttitle"><b><a href='http://asimsuvedi.posthaven.com' rel='external nofollow' class='url'>Asim Suvedi</a></b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394254" title="Permanent link to this comment">6:59 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>WOW ! That&#8217;s my story (the problem part). Thank you for writing.<br />
+I plan to do so much on on weekends and I get depressed for not completing the TODOs.<br />
+I think it&#8217;s important not to Plan too much and do less at a time. With information overload, we just forget we are humans not computers and try to do a lot of things which backfires instead.</p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394255">
+
+		<h3 class="commenttitle"><b><a href='http://gotux.net/' rel='external nofollow' class='url'>TuxLyn</a></b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394255" title="Permanent link to this comment">6:59 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Consistency is very important, I&#8217;ve been coding for many years now most of the code Is private. But I&#8217;ve always tried coding daily, this makes you think about code and fix bugs even in your dream ^_^ Good post thank you.</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394256">
+
+		<h3 class="commenttitle"><b><a href='http://lovejoy.io' rel='external nofollow' class='url'>lovejoy</a></b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394256" title="Permanent link to this comment">7:26 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>My coworker has a streak over a month now, and I may join. Keeping count is itself a turn-off for me, so I&#8217;ll need the mindset of just counting to two: yesterday and today. This suggestion could help improve my favorite side work, by not cramming 7 hours in the dark between Saturday and Sunday.</p>
+<p>P.S. I love Steven Resig&#8217;s illustrations, but it seems his server&#8217;s doing its best just to load the thumbnails; larger versions were inaccessible.</p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394257">
+
+		<h3 class="commenttitle"><b>Shane</b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394257" title="Permanent link to this comment">7:44 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>This resounded with me. I just came to many of the same conclusions you touched on. After years of continually starting and never completing side projects I came to the slow realization that something needed to change. I also forced myself to code everyday (weekends included) and developed the habit of doing at least a couple hours first thing in the morning. Thanks for the post and reaffirming the benefits.</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394258">
+
+		<h3 class="commenttitle"><b>aliencoder</b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394258" title="Permanent link to this comment">8:01 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Very nice article, I will surely give it a try.</p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394260">
+
+		<h3 class="commenttitle"><b><a href='http://hipikat.org/' rel='external nofollow' class='url'>Adam Wright</a></b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394260" title="Permanent link to this comment">10:01 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Well the first three paragraphs describe my life for the last odd year and a half perfectly, so sure. I shall also give this a try.</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394261">
+
+		<h3 class="commenttitle"><b><a href='http://www.codetactics.com' rel='external nofollow' class='url'>Glenn</a></b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394261" title="Permanent link to this comment">10:16 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>&#8220;Do a little bit every day and then you&#8217;ll be done.&#8221;</p>
+<p>That&#8217;s a saying I keep telling myself as I try and do what your article suggests. I also like to write about my projects in blog posts in a coder-centric &#8216;dear diary&#8217; kind of way. It not only allows me to remain enthused about what I&#8217;m doing and provides something to show to friends but also journalises how much has been accomplished. Knowing that the time hasn&#8217;t been wasted is important for self-esteem.</p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394262">
+
+		<h3 class="commenttitle"><b><a href='https://github.com/jhtan' rel='external nofollow' class='url'>Jhonatn</a></b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394262" title="Permanent link to this comment">11:14 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Hey!..<br />
+I&#8217;m actually testing this strategy for competitive programming. Was very difficult to train for the ACM-ICPC when I was working as developer, but now that I only study in the University I solve at least a problem a day for maintain my streak in my Github in these are the results in some online judges for competitive competitions:<br />
+<a href="http://community.topcoder.com/tc?module=MemberProfile&#038;cr=22778322" rel="nofollow">http://community.topcoder.com/tc?module=MemberProfile&#038;cr=22778322</a><br />
+<a href="http://codeforces.com/profile/jhtan" rel="nofollow">http://codeforces.com/profile/jhtan</a><br />
+It works!..</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394263">
+
+		<h3 class="commenttitle"><b><a href='http://www.richardbakare.com' rel='external nofollow' class='url'>Richard Bakare</a></b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394263" title="Permanent link to this comment">11:14 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Very good advice.</p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394264">
+
+		<h3 class="commenttitle"><b>Alex</b>
+
+		<small><small>
+			(April 10, 2014
+			at <a href="#comment-394264" title="Permanent link to this comment">11:33 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>John, you made my day!</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394266">
+
+		<h3 class="commenttitle"><b>Frederic Branczyk</b>
+
+		<small><small>
+			(April 11, 2014
+			at <a href="#comment-394266" title="Permanent link to this comment">12:19 am</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>I have been doing the same since last year <a href="http://github.com/flower-pot" rel="nofollow">http://github.com/flower-pot</a> the only time I sometimes make an exception is when im on vacation.</p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394269">
+
+		<h3 class="commenttitle"><b>Randall</b>
+
+		<small><small>
+			(April 11, 2014
+			at <a href="#comment-394269" title="Permanent link to this comment">1:13 am</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>I had a pretty good run starting my first project in Go, where the rule was mostly &#8220;just do *something* now, no matter how ridiculously small.&#8221; And &#8220;something&#8221; meant bits of functionality or improvements (like cleaning up pain points in the code) I could test; plans are cheap.</p>
+<p>I found small, running pieces add up to actual software faster than you think. The wrong kind of sitting and thinking slows you down more than you think. Actually making stuff is motivating and maintains momentum. The bit about problems percolating in the background as you work is totally true.</p>
+<p>I also found the other thing folks in the comments mention, that it just takes an incredible number of hours. I mostly had to forget about it when I had to focus on real life for a bit. I&#8217;m pretty skeptical about the idea that seems to be widespread that coders *should* have side projects to show, that they&#8217;re somehow necessary for a coder to be whole rather than just a cool bonus thing that life sometimes permits, like, say, exercising 3x/week or baking really good bread.</p>
+<p>Finally, with a better idea of the investment, I care a bit more about what I choose to work on. I need to either be *really* confident I&#8217;d find just the doing itself worthwhile (e.g., using fun CS or expanding my limits somehow) or I have a rational hope that my work could actually help the world in some really miniscule way. </p>
+<p>Also, just observing the difference in doing a side project now vs. soon after college makes me aware that time management just works differently with friends and social obligations.</p>
+<p>I feel like there ought to be some way to swirl this around into a satisfying synthesis involving building things in thousands of tiny pieces around the rest of life or something. But, not right now.</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394270">
+
+		<h3 class="commenttitle"><b>Emil</b>
+
+		<small><small>
+			(April 11, 2014
+			at <a href="#comment-394270" title="Permanent link to this comment">1:24 am</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Reading this almost seemed that I wrote it. Exactly the same feelings of guilt over not working on side projects enough, delaying work for the weekends etc. I too ended up commiting to write code every day, but I also set myself specific hours to do so: 5am to 8-9am. This meant that I should wake up at 4am each day, go to bed early etc., but has the added benefit that the world is a quiet place at night/early morning and I find it very easy to get into &#8220;the flow&#8221;, no distractions.<br />
+Very nice read, it&#8217;s interesting to see how similar lives of programmers might be :).</p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394271">
+
+		<h3 class="commenttitle"><b><a href='http://www.coopsource.org' rel='external nofollow' class='url'>Alan Moore</a></b>
+
+		<small><small>
+			(April 11, 2014
+			at <a href="#comment-394271" title="Permanent link to this comment">1:52 am</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Wouldn&#8217;t it be nice if you could make your &#8220;side project&#8221; (or hobby project as I call them) your day job?</p>
+<p>That is what I&#8217;m working on&#8230; I&#8217;ll let you know how it goes.</p>
+<p>I agree with the coding every day thing. I used to work weekends mainly because I let my day job take up 10-14 hours every day. So I worked on the weekends. I even took a whole week of PTO just so I could make &#8220;a ton of progress&#8221; on my project.</p>
+<p>It turns out that I make more progress on a daily basis than I did taking PTO. Go figure &#8211; I think my mind needs to mull things over during the day. Faced with too much time I felt guilty like I was wasting my PTO and didn&#8217;t code as much.</p>
+<p>My worst daily bad habit is doing &#8220;research&#8221; into my domain&#8230; a miss a lot of coding in the name of research. I need to stop looking at what others are doing (similar to my project) and just get on with what I&#8217;m working on!</p>
+<p>Now I&#8217;m looking for a co-founder to help keep the project moving along. I think it helps when you have someone else to work with &#8211; but it needs to be someone who is onboard with your specific project/goals&#8230; not always easy to find.</p>
+<p>Good luck with your projects!</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394272">
+
+		<h3 class="commenttitle"><b>François de Campredon</b>
+
+		<small><small>
+			(April 11, 2014
+			at <a href="#comment-394272" title="Permanent link to this comment">1:59 am</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Hello,<br />
+Reading your post was fun, especially since I recognize myself a lot in what you wrote.<br />
+Few months ago I worked on my side projects only the weekend, not making substantial progress, giving my girlfriend hard times when she planned something else, always ending up disappointed because I didn&#8217;t achieved everything that I had planned. Today I work every morning from 7 am to 9 am before going to my job and only 1 day by weekend, I feel that is a lot more efficient and more of all when I&#8217;m going to bed my mind is freer, and I can&#8217;t wait to wake up to work on my own stuff again!</p>
+<p>François de Campredon</p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394273">
+
+		<h3 class="commenttitle"><b>Wes</b>
+
+		<small><small>
+			(April 11, 2014
+			at <a href="#comment-394273" title="Permanent link to this comment">3:47 am</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Try writing a failing test to indicate where you left off and where to start tomorrow. I have found this a great way to reduce the cost of the context switch.</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394274">
+
+		<h3 class="commenttitle"><b>Tom Readings</b>
+
+		<small><small>
+			(April 11, 2014
+			at <a href="#comment-394274" title="Permanent link to this comment">3:55 am</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>I found this post extremely reassuring. Also struggling with motivation time to take on and maintain side projects. It does seem that you have hit on a method that works for you. I hope you are able to continue with this level of self discipline without it becoming a chore.</p>
+<p>In an ideal world I would be working on the things that interest me within the working week only and dropping all computer based work evenings and weekends, but I suspect that if the code projects I was working on the day were self motivated or more interesting I would still be at my computer late at night&#8230;</p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394275">
+
+		<h3 class="commenttitle"><b>Michael</b>
+
+		<small><small>
+			(April 11, 2014
+			at <a href="#comment-394275" title="Permanent link to this comment">4:10 am</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>As an aside: I wrote a book in 4 months by following the same principle.</p>
+<p>If someone had said that to me on day 1 that I would actually write 100,000 words I would have seemed unimaginable, but it adds up.</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394277">
+
+		<h3 class="commenttitle"><b><a href='http://vizaysoni.com' rel='external nofollow' class='url'>vs4vijay</a></b>
+
+		<small><small>
+			(April 11, 2014
+			at <a href="#comment-394277" title="Permanent link to this comment">5:07 am</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Very Inspiring</p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394278">
+
+		<h3 class="commenttitle"><b>Mikael</b>
+
+		<small><small>
+			(April 11, 2014
+			at <a href="#comment-394278" title="Permanent link to this comment">5:55 am</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>This is one of the best posts I have seen in a long time!</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394279">
+
+		<h3 class="commenttitle"><b><a href='http://veryfizzyjelly.com' rel='external nofollow' class='url'>Matt</a></b>
+
+		<small><small>
+			(April 11, 2014
+			at <a href="#comment-394279" title="Permanent link to this comment">7:41 am</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>I am always busy at weekends so its hard to get solid hours coding done so I have no choice in doing it throughout the week, but, whilst in my case it is compulsory if I want to learn I&#8217;ve always thought it the best way to do. Glad to know more experienced guys also see the benefit.</p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394280">
+
+		<h3 class="commenttitle"><b>Ed Aymami</b>
+
+		<small><small>
+			(April 11, 2014
+			at <a href="#comment-394280" title="Permanent link to this comment">9:17 am</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>I am now 65 years old and have been working on an application I first started working on in 1978 before most of you guys were born. I am now in partnership with one of my oldest customers and work for his business about 45 hours a week, modifying and supporting my app for his company and also supporting our other clients.</p>
+<p>I was immediately struck by how accurately you described the problem. I am currently attempting to rewrite the application (over 350,000 lines of code), moving it from VB6 to Visual Studio 2010 (VB of course). I tried previously with VS2002, and VS2005. But before I ever got finished, Microsoft would come out with a new version of Visual studio.</p>
+<p>It is encouraging to know that other programmers/developers/ (it really is 98% coding) are going through the same thing. </p>
+<p>My problems are having to exercise regularly due to heart problems from so many years of sitting on my chair and coding, and addiction to NCIS, BigBang, and Elementary, and a wife that I love dearly who wants to see me occasionally.</p>
+<p>I intend to start trying your solution tonight. I will follow up in a few weeks and let you know. Great, great article/blog/info!</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394281">
+
+		<h3 class="commenttitle"><b><a href='http://www.ghadeerkenawi.com' rel='external nofollow' class='url'>ghadeer</a></b>
+
+		<small><small>
+			(April 11, 2014
+			at <a href="#comment-394281" title="Permanent link to this comment">9:20 am</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Great information :) But waht about a full time Mom like me ? What I do is I think about coding whle I&#8217;m washing dishes or watching TV with my kids or take tem to activities and also while we do grocery shopping :))</p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394282">
+
+		<h3 class="commenttitle"><b>Anam</b>
+
+		<small><small>
+			(April 11, 2014
+			at <a href="#comment-394282" title="Permanent link to this comment">9:53 am</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Thanks for sharing. Definitely going to try this.</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394283">
+
+		<h3 class="commenttitle"><b>Jayin Ton</b>
+
+		<small><small>
+			(April 11, 2014
+			at <a href="#comment-394283" title="Permanent link to this comment">10:06 am</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>lol!<br />
+it&#8217;s so inspiring!<br />
+I found we have the same action,trying to code everyday !<br />
+here&#8217;s my github:<a href="https://github.com/Jayin" rel="nofollow">https://github.com/Jayin</a></p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394284">
+
+		<h3 class="commenttitle"><b>Doug C</b>
+
+		<small><small>
+			(April 11, 2014
+			at <a href="#comment-394284" title="Permanent link to this comment">10:09 am</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>You are very inspiring, but how do you manage to write code every day? Don&#8217;t you ever find that you need to spend &#8220;coding time&#8221; on research or planning and thus not getting any code written?</p>
+<p>Sometimes when I&#8217;m working on a side project, I find I have to solve a particularly hard problem. Instead of writing code, I wind up drawing diagrams, outlining possible approaches, or searching to see if/how others have solved similar problems. Other times, I find I have to get some library or framework that looks promising, setup a build environment, build it and test it. It can take up the whole hour I&#8217;ve set aside in the early morning for my side projects.</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394286">
+
+		<h3 class="commenttitle"><b>zakariae</b>
+
+		<small><small>
+			(April 11, 2014
+			at <a href="#comment-394286" title="Permanent link to this comment">11:15 am</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>helloo , abd thanks for this awesome post.<br />
+can you explain clearly about the projects you have done with this method.</p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394288">
+
+		<h3 class="commenttitle"><b><a href='http://www.anandilab.com' rel='external nofollow' class='url'>ARC</a></b>
+
+		<small><small>
+			(April 11, 2014
+			at <a href="#comment-394288" title="Permanent link to this comment">12:12 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>This is awesome! I don&#8217;t write code, and I still find it super inspiring as I&#8217;ve got several creative side projects/business going from my regular day jobs of mama and soon, software project manager (again).  I also tend to save work for late at night when I&#8217;m exhausted or think I&#8217;ll get to it on the weekend, but it&#8217;s not like I EVER have a whole day to luxuriate in my side projects.</p>
+<p>Thanks for the inspiration!</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394291">
+
+		<h3 class="commenttitle"><b>parinay</b>
+
+		<small><small>
+			(April 11, 2014
+			at <a href="#comment-394291" title="Permanent link to this comment">1:27 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Thanks so much mate !<br />
+I am struggling right now, having hard time between my job and my side projects and this blog from you came up as oxygen for me.<br />
+Incredible way out!<br />
+I am going to plan around what you have shared.</p>
+<p>Indebted.</p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394292">
+
+		<h3 class="commenttitle"><b><a href='http://???.com' rel='external nofollow' class='url'>Jonathan Barronville</a></b>
+
+		<small><small>
+			(April 11, 2014
+			at <a href="#comment-394292" title="Permanent link to this comment">1:36 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Thanks so much for writing this article, John! I&#8217;m definitely going to work on a framework like this for myself.</p>
+<p>- Jonathan</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394294">
+
+		<h3 class="commenttitle"><b><a href='http://itblog.eckenfels.net' rel='external nofollow' class='url'>Bernd Eckenfels</a></b>
+
+		<small><small>
+			(April 11, 2014
+			at <a href="#comment-394294" title="Permanent link to this comment">2:19 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>@Paolol, if they dont, it would be a good first project :)</p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394295">
+
+		<h3 class="commenttitle"><b><a href='http://www.ngbuzz.com' rel='external nofollow' class='url'>Soki Briggs</a></b>
+
+		<small><small>
+			(April 11, 2014
+			at <a href="#comment-394295" title="Permanent link to this comment">2:23 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>While learning HTML and CSS from codecademy, this method you described worked because they counted streaks, so i had to complete an exercise everyday.<br />
+Not going too well with javascript probably because i&#8217;m using Offline Videos with no one counting my streak.</p>
+<p>Thanks for this John &#8211; Beginners like me need all the motivation we can get and challenge.</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394296">
+
+		<h3 class="commenttitle"><b><a href='http://www.midgetontoes.com' rel='external nofollow' class='url'>Alex Cheng</a></b>
+
+		<small><small>
+			(April 11, 2014
+			at <a href="#comment-394296" title="Permanent link to this comment">3:42 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>I&#8217;m trying to follow this practice these days. It&#8217;s very good. Sometimes even though I don&#8217;t have enough time to code, writing blog posts is also a very good way to summarise what you have learnt.</p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394298">
+
+		<h3 class="commenttitle"><b>Allan Kiezel</b>
+
+		<small><small>
+			(April 11, 2014
+			at <a href="#comment-394298" title="Permanent link to this comment">5:06 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>I fucking love this article!!! I&#8217;ve had such a hard time with this over the past year or so, and finally started on a similar path. I&#8217;m definitely going to implement some of your ideas going forward. Also, I&#8217;d like to add a link to your post in a recent article I wrote around this topic (<a href="http://hacksnsnacks.com/hacks/theres-always-room-for-jell-o/" rel="nofollow">http://hacksnsnacks.com/hacks/theres-always-room-for-jell-o/</a>). Thanks, and excellent illustrations!</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394300">
+
+		<h3 class="commenttitle"><b>Karolski</b>
+
+		<small><small>
+			(April 11, 2014
+			at <a href="#comment-394300" title="Permanent link to this comment">8:56 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>You are crazy.<br />
+If you are in a relationship then you are doing yourself and your partner disservice.<br />
+When you are doing projects of any complexity then you need to slow down. From time to time you need to take a break to let your subconsciousness take stock and sort-out the overall picture. Only then you you can have a break-though idea. Working constantly at the grinding wheel will never get you there.<br />
+What about your paid job? Is your employer happy with the QUALITY of your work?<br />
+There was a time in my life when I would wake-up, OK I need to get-up. Just-a-second, what commands do we have to put the left foot on the ground?&#8230;<br />
+Never again!</p>
+<p>Karl</p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394303">
+
+		<h3 class="commenttitle"><b>Thuy</b>
+
+		<small><small>
+			(April 11, 2014
+			at <a href="#comment-394303" title="Permanent link to this comment">11:16 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Good advises, would try and tell you back my results after a specified amount of time. I&#8217;ve been endured the same feeling when I couldn&#8217;t get some of my side projects done as I hoped.</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394307">
+
+		<h3 class="commenttitle"><b><a href='http://allensnook.com' rel='external nofollow' class='url'>Allen</a></b>
+
+		<small><small>
+			(April 12, 2014
+			at <a href="#comment-394307" title="Permanent link to this comment">10:35 am</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>I suffer from the same anxiety too &#8211; a side project (a somewhat popular WordPress plugin) has a never-ending stream of feature requests coming in.</p>
+<p>But after watching my health deteriorate from too much sitting, it is just not worth it any more to me.  Living longer and healthier and spending time with the people I care about is far more important than the side projects.</p>
+<p>So, I&#8217;m learning to live with the angst of not being able to solve everyone&#8217;s problems and taking care of myself more. And I find each day I get those 10,000 or more steps on the FitBit, the less angst I feel.</p>
+<p>YMMV</p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394315">
+
+		<h3 class="commenttitle"><b><a href='http://antjanus.com/' rel='external nofollow' class='url'>Antonin Januska</a></b>
+
+		<small><small>
+			(April 12, 2014
+			at <a href="#comment-394315" title="Permanent link to this comment">4:11 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Doggy,<br />
+I work at a company called CMN (<a href="http://cmn.com" rel="nofollow">http://cmn.com</a>). And I do get a ton of code done on a daily basis. </p>
+<p>We have a wide variety of projects so it&#8217;s actually easy to do a ton of work without feeling burnt out. We have prototypical style work, R&amp;D stuff, development with cutting edge work, improvements to legacy system etc. etc. Plus, you always see the immediate effect of your code, not because of continuous deployments, but usually because of the magnitude of worth your code brings to the table. Anyways, at the end of the day, I may spend another 10-20 minutes working on my own stuff but my coder-self feels like I&#8217;m good for the day as it is since I get to do cutting-edge tech dev as well as legacy code dev.</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394321">
+
+		<h3 class="commenttitle"><b>Paul</b>
+
+		<small><small>
+			(April 12, 2014
+			at <a href="#comment-394321" title="Permanent link to this comment">9:19 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Great blog post.  I think your overall strategy of incremental progress is very effective, and one that I&#8217;ve started to follow as well.  The one thing you highlight which I think is key is battling anxiety &#8211; by chipping away at projects you have less anxiety about getting &#8220;enough&#8221; work done.</p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394331">
+
+		<h3 class="commenttitle"><b><a href='http://takingcare.ws' rel='external nofollow' class='url'>Lillie</a></b>
+
+		<small><small>
+			(April 13, 2014
+			at <a href="#comment-394331" title="Permanent link to this comment">4:29 am</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>This is a very good article. I can relate to the need and anxiety of developing good work habits. I am not sure of what your personal code writing is, but it is good to know I am not alone in the challenges and effects of bad work habits. Knowing that you have succeeded is a great incentive for believing in ones ability to develop and maintain productive habits too. Thanks for sharing your experience.</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394336">
+
+		<h3 class="commenttitle"><b>Chris F</b>
+
+		<small><small>
+			(April 13, 2014
+			at <a href="#comment-394336" title="Permanent link to this comment">8:34 am</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Great write up! Very inspiring to me as someone who primarily does projecf management and hasn&#8217;t been hands on with development for years.</p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394338">
+
+		<h3 class="commenttitle"><b><a href='http://Www.lovekidsbooks.com' rel='external nofollow' class='url'>Childrens books fan</a></b>
+
+		<small><small>
+			(April 13, 2014
+			at <a href="#comment-394338" title="Permanent link to this comment">2:56 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>I&#8217;ve launched a number of project, with varying degrees of success.<br />
+I&#8217;ve found like u the key is consistent effort, even 30mins a day can achieve great results</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394341">
+
+		<h3 class="commenttitle"><b><a href='http://blog.adnansiddiqi.me' rel='external nofollow' class='url'>Adnan</a></b>
+
+		<small><small>
+			(April 14, 2014
+			at <a href="#comment-394341" title="Permanent link to this comment">12:45 am</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Giving an hour or even 30 mins every day will not screw your health. Come on guys!</p>
+</div>
+
+		</li>
+
+
+
+		<li class="alt " id="comment-394342">
+
+		<h3 class="commenttitle"><b><a href='http://buybitcoinspaypal.com' rel='external nofollow' class='url'>Suumit</a></b>
+
+		<small><small>
+			(April 14, 2014
+			at <a href="#comment-394342" title="Permanent link to this comment">1:00 am</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>Hello John,</p>
+<p>Since I have joined company, I feel like I am not getting time to work on my own projects due to lack of time. What max I could do is couple of hours per week, but its not at all sufficient. I&#8217;ll surely try to code everyday and make it live on GitHub.</p>
+<p>Thanks for such an awesome article. :)</p>
+</div>
+
+		</li>
+
+
+
+		<li class=" " id="comment-394348">
+
+		<h3 class="commenttitle"><b><a href='http://www.whizpress.com' rel='external nofollow' class='url'>Bryan Fleming</a></b>
+
+		<small><small>
+			(April 14, 2014
+			at <a href="#comment-394348" title="Permanent link to this comment">8:30 pm</a>)
+					</small></small>
+		</h3>
+
+		<div class="comment-text"><p>I kinda agree with &#8211; you can really only do one project at a time.  It has to be serial.  Otherwise you get too stressed out.</p>
+<p>- Bryan</p>
+</div>
+
+		</li>
+
+
+
+	</ol>
+
+	<!--<p class="small">
+	<a href='http://ejohn.org/blog/write-code-every-day/feed/'><abbr title="Really Simple Syndication">RSS</abbr> feed for comments on this post</a>		</p>-->
+
+
+
+
+		<form action="http://ejohn.org/wp-comments-post.php" method="post" id="commentform">
+		<h4 id="postcomment">Leave a Comment</h4>
+
+
+		<p>
+		<input type="text" name="author" id="author" value="" size="30" tabindex="1" />
+		<label for="author">Name (required)</label>
+		</p>
+
+		<p>
+		<input type="text" name="email" id="email" value="" size="30" tabindex="2" />
+		<label for="email">E-mail (required, never displayed)</label>
+		</p>
+
+		<p>
+		<input type="text" name="url" id="url" value="" size="30" tabindex="3" />
+		<label for="url"><abbr title="Uniform Resource Identifier">URI</abbr></label>
+		</p>
+
+
+	<p>
+	<textarea name="comment" id="comment" cols="70" rows="10" tabindex="4"></textarea>
+	</p>
+
+	<p><small><b>Note:</b> Wrap all of your code blocks in &lt;code>...&lt;/code> and replace &lt; and &gt; with &amp;lt; and &amp;gt;, respectively.</small></p>
+
+	<p>
+	<input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+	<input type="hidden" name="comment_post_ID" value="6144" />
+	</p>
+
+	<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="cd36c0b321" /></p>
+	</form>
+
+
+
+		<!--<script src="http://feeds.feedburner.com/~s/JohnResig?i=http://ejohn.org/blog/write-code-every-day/" type="text/javascript" charset="utf-8"></script>-->
+		<!--<img src="http://ejohn.org/apps/rss/?from=single&amp;id=6144" style="width:0px;height:0px;"/>-->
+
+
+
+
+        </div></div>
+
+        <div id="side">
+                <div id="projects">
+                        <!--<h2>JavaScript Books</h2>-->
+
+                        <div class="box">
+                        <a href="http://www.amazon.com/gp/product/193398869X/ref=as_li_ss_il?ie=UTF8&camp=1789&creative=390957&creativeASIN=193398869X&linkCode=as2&tag=jspro-20"><img src="/files/jsninja.74.jpg" class="icon" alt="Secrets of the JavaScript Ninja" width="74" height="94"/></a>
+                        <div class="desc">
+                                <h3><a href="http://www.amazon.com/gp/product/193398869X/ref=as_li_ss_il?ie=UTF8&camp=1789&creative=390957&creativeASIN=193398869X&linkCode=as2&tag=jspro-20">Secrets of the JS Ninja</a></h3>
+                                <p>Secret techniques of top JavaScript programmers. Published by Manning.</p>
+                        </div>
+                        </div>
+                        <div class="box">
+                        <a href="http://ukiyo-e.org"><img src="/images/ukiyoe-76.png" class="icon" alt="Ukiyo-e Database and Search" width="74" height="74"/></a>
+                        <div class="desc">
+													<h3><a href="http://ukiyo-e.org/">Ukiyo-e.org</a></h3>
+													<p>Japanese woodblock print database and search engine.</p>
+												</div>
+												</div>
+												<!--
+                        <div class="box">
+                        <a href="http://jspro.org/"><img src="/images/ejohn-side-book.gif" class="icon" alt="Pro JavaScript Techniques"/></a>
+                        <div class="desc">
+                                <h3><a href="http://jspro.org/">Pro JavaScript</a></h3>
+                                <p>The best techniques for professional  JavaScript. Published by Apress.</p>
+                        </div>
+                        </div>
+												-->
+
+                        <!--<h3>Subscribe</h3>-->
+												<br/>
+                        <div class="box">
+				<form action="http://jquery.us1.list-manage1.com/subscribe/post?u=9d97dbe5f30bdee8c85a45e9e&amp;id=7257ed4444" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<label for="mce-EMAIL">Subscribe for email updates:</label>
+					<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+					<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+				</form>
+                        </div>
+                        <div class="box">
+                        <a href="http://twitter.com/jeresig"><img src="/images/twitter-74.png" class="icon" alt="John Resig Twitter Updates" width="74" height="74"/></a>
+                        <div class="desc">
+                                <h3><a href="http://twitter.com/jeresig">@jeresig</a></h3>
+                                <p>Infrequent, short, updates and links.</p>
+                        </div>
+                        </div>
+
+                        <!--<h2><a href="http://jobs.jsninja.com/">JavaScript Jobs</a></h2>-->
+												<br/>
+                        <div class="box">
+			<h3><a href="http://jobs.jsninja.com/">JavaScript Jobs</a></h3>
+			<!--<h3><a href="http://www.mozilla.com/en-US/careers/">Mozilla: Browser Jobs</a></h3>-->
+                        </div>
+
+			<div id="bsap_1266114" class="bsarocks bsap_4781b916559ccb5e5661d93b10000fad"></div>
+			<a href="http://adpacks.com" id="bsap_aplink">via Ad Packs</a>
+
+			<!--<br/>
+                        <div class="box">
+                        <a href="http://ukiyo-e.org"><img src="/images/ukiyoe-76.png" class="icon" alt="Ukiyo-e Database and Search"/></a>
+                        <div class="desc">
+													<h3><a href="http://ukiyo-e.org/">Ukiyo-e.org</a></h3>
+													<p>Japanese woodblock print database and search engine.</p>
+												</div>
+												</div>-->
+
+                        <div class="box">
+												<!-- https://www.digitalocean.com/?refcode=092a26769f8e -->
+			  <a href="http://mediatemple.net/">VPS Hosting Provided by Media Temple</a>
+			</div>
+                </div>
+        </div>
+
+</div>
+</div>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-50335-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+(function(){
+  var bsa = document.createElement('script');
+     bsa.type = 'text/javascript';
+     bsa.async = true;
+     bsa.src = '//s3.buysellads.com/ac/bsa.js';
+  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+})();
+</script>
+</body>
+</html>
+
+<!-- Dynamic page generated in 0.115 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2014-04-15 02:07:48 -->
+
+<!-- super cache -->

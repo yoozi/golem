@@ -47,6 +47,15 @@ class ExtractorTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals($og['image'], 'http://l.yimg.com/bt/api/res/1.2/vQUly0xl2admpd8f4_adyQ--/YXBwaWQ9eW5ld3M7cT04NTt3PTYwMA--/http://media.zenfs.com/en_us/News/ap_webfeeds/dafd55e7b1230e0c500f6a706700734c.jpg');
     }
 
+    public function testParseBlogWithNoMetaTagsUsingReadabilityParser()
+    {
+        $this->extractor->getConfig()->set('parser', 'readability');
+        $meta = $this->extractor->fromSource($this->file('code-every-day'))->run();
+
+        $this->assertEquals($meta['title'], 'John Resig');
+        $this->assertNotNull($meta['description']);
+    }
+
     public function testParseUTF8SourceWithHybridParser()
     {
         $file = $this->file('utf-8');

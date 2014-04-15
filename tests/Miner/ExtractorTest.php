@@ -73,6 +73,10 @@ class ExtractorTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals($meta['host'], 'http://www.example.com');
         $this->assertEquals($meta['domain'], 'example.com');
         $this->assertEquals($meta['favicon'], 'http://www.google.com/s2/favicons?domain=example.com');
+
+        $this->assertInstanceOf('Yoozi\Miner\Parsers\ParserInterface', $this->extractor->getParser());
+        $this->assertInstanceOf('Yoozi\Miner\Config', $this->extractor->getConfig());
+        $this->assertEquals($this->extractor->getCharset(), 'utf-8');
     }
 
     private function file($name, $ext = '.html')

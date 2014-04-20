@@ -51,16 +51,16 @@ body {
   font-size: 1em;
   line-height: 1.5;
   background: #e7e7e7 url(../images/body-bg.png) 0 0 repeat;
-  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
   color: #6d6d6d;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, serif;
 }
 
 a {
-  color: #d5000d;
+  color: #00b187;
 }
 a:hover {
-  color: #c5000c;
+  text-decoration: underline;
 }
 
 .l-aligned {
@@ -85,7 +85,7 @@ a:hover {
 
 header {
   padding: 25px 0;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, serif; font-weight: 900;
+  font-weight: 900;
 }
 
 header h1 {
@@ -138,7 +138,7 @@ a.button {
   color: #303030;
   line-height: 25px;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 14px;
   padding: 12px 8px 12px 8px;
   display: block;
   float: left;
@@ -277,7 +277,7 @@ h2 {
 }
 
 h3 {
-  color: #d5000d;
+  color: #00b187;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 8px;
@@ -322,6 +322,7 @@ blockquote {
 ul li {
   list-style: disc inside;
   padding-left: 20px;
+  font-weight: 300;
 }
 
 ol li {
@@ -347,6 +348,62 @@ footer a {
 }
 footer a:hover {
   color: #444;
+}
+
+#repos {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+li.repo {
+  padding-left:0;
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+li.repo > a {
+  position: relative;
+  float:left;
+  height:100%;
+  display: inline-block;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  margin-right:10px;
+  background: rgba(255, 255, 255, 0.7);
+  -moz-box-shadow:    0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+  box-shadow:         0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+li.repo a:hover {
+  background: #efefef;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+li.repo h2,
+li.repo h3,
+li.repo p {
+  margin: 10px 15px;
+}
+
+li.repo h2 {
+  margin-bottom: 2px;
+  max-width: 160px;
+  overflow: hidden;
+}
+
+li.repo h3 {
+  font-size: 11px;
+  margin-top: 2px;
+  margin-bottom: 15px;
+  color: #999;
+}
+
+li.repo p {
+  font-size: 13px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, serif;
 }
 
 /* MISC */

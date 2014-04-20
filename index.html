@@ -26,7 +26,7 @@
                 </div>
                 <div class="pure-u-3-4">
                     <div id="languages" class="pure-visible-desktop">
-                        <a href="zh-cn.html" target="_blank" title="点击查看中文版">中文版</a>
+                        <!--<a href="zh-cn.html" target="_blank" title="点击查看中文版">中文版</a>-->
                     </div>
                 </div>
             </div>
@@ -46,36 +46,120 @@
 
         <section id="main_content">
           <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+            <a name="what-is-project-golem" class="anchor" href="#what-is-project-golem"><span class="octicon octicon-link"></span></a>
+            What is Project Golem?
+          </h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+          <p>
+            Project Golem is a PHP development toolkit crafted by R&D team from <a href="http://www.yoozi.cn/">Yoozi Inc</a>.
+            It consists of a growing collection of loosely coupled high-level PHP libraries, most of which are derived from our own products to solve real world problems.
+          </p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+          <ol id="repos" class="clearfix pure-g-r"></ol>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+          <p>
+          Golem can be installed as a whole package via Composer. However, to keep dependency and installation footprint as low as possible, each library within Golem can also be installed as a standalone package.
+          </p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+          <h3>
+            <a name="system-requirements" class="anchor" href="#system-requirements"><span class="octicon octicon-link"></span></a>
+          System Requirements
+          </h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+          <ul>
+            <li>PHP >= 5.3.0</li>
+            <li>You will need <a href="https://getcomposer.org/">Composer</a> installed to load the dependencies of Golem libraries.</li>
+            <li>Some libraries may require extra server components and/or extensions installed.</li>
+          </ul>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+          <h3>
+            <a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>
+            Installation
+          </h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+          <p>
+            The best and easy way to install the Golem package is via Composer.
+          </p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+          <p>
+            1. Open your composer.json and add the following to the require array:
+          </p>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+          <pre><code>"yoozi/golem": "1.0.*"</code></pre>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+          <p>
+            2. Run Composer to install or update the new package dependencies.
+          </p>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+          <pre><code>php composer install</code></pre>
+
+          <p>
+            or
+          </p>
+
+          <pre><code>php composer update</code></pre>
+
+          <h3>
+            <a name="versioning" class="anchor" href="#versioning"><span class="octicon octicon-link"></span></a>
+            Versioning
+          </h3>
+
+          <p>
+            For transparency and insight into our release cycle, releases will be numbered with the follow format:
+          </p>
+
+          <pre><code>&lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;</code></pre>
+
+          <p>
+            And constructed with the following guidelines:
+          </p>
+
+          <ul>
+            <li>Breaking backwards compatibility bumps the major</li>
+            <li>New additions without breaking backwards compatibility bumps the minor</li>
+            <li>Bug fixes and misc changes bump the patch</li>
+          </ul>
+
+          <p>For more information on semantic versioning, please visit <a href="http://semver.org/">http://semver.org/</a>.</p>
+
+          <h3>
+            <a name="testing" class="anchor" href="#testing"><span class="octicon octicon-link"></span></a>
+            Testing
+          </h3>
+
+          <p>
+             To run the tests you first need to install <a href="http://phpunit.de/">PHPUnit</a>.
+          </p>
+
+          <pre><code>$ phpunit</code></pre>
+
+          <h3>
+            <a name="changelog" class="anchor" href="#changelog"><span class="octicon octicon-link"></span></a>
+            Changelog
+          </h3>
+
+          <p>
+            See changelogs <a href="https://github.com/yoozi/golem/blob/master/CHANGELOG.md">here</a>.
+          </p>
+
+          <h3>
+            <a name="testing" class="anchor" href="#testing"><span class="octicon octicon-link"></span></a>
+            Authors
+          </h3>
+
+          <p>
+            See authors and contributors <a href="https://github.com/yoozi/golem/graphs/contributors">here</a>.
+          </p>
+
+          <h3>
+            <a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>
+            License
+          </h3>
+
+          <p>
+            Copyright 2014 Yoozi, Inc.<br>
+            Licensed under <a href="https://github.com/yoozi/golem/blob/master/LICENSE">the MIT License</a>.
+          </p>
         </section>
 
         <footer>
@@ -84,5 +168,7 @@ $ git checkout gh-pages
         </footer>
       </div>
     </div>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="javascripts/main.js"></script>
   </body>
 </html>

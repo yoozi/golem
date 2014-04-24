@@ -12,7 +12,7 @@ The best and easy way to install the Golem package is with [Composer](https://ge
 1. Open your composer.json and add the following to the require array:
 
     ```
-    "yoozi/miner": "1.0.*"
+    "yoozi/email": "1.0.*"
     ```
 
 2. Run Composer to install or update the new package dependencies.

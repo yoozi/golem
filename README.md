@@ -49,9 +49,9 @@ The best and easy way to install the Golem package is via Composer.
 
 For transparency and insight into our release cycle, releases will be numbered with the follow format:
 
-    ```
-    <major>.<minor>.<patch>
-    ```
+```
+<major>.<minor>.<patch>
+```
 
 And constructed with the following guidelines:
 
@@ -65,9 +65,9 @@ For more information on semantic versioning, please visit [http://semver.org/](h
 
 To run the tests you first need to install [PHPUnit](http://phpunit.de/).
 
-    ```
-    $ phpunit
-    ```
+```
+$ phpunit
+```
 
 ## Changelog
 
@@ -80,4 +80,5 @@ See authors and contributors [here](https://github.com/yoozi/golem/graphs/contri
 ## License
 
 Copyright 2014 Yoozi, Inc.
+
 Licensed under the [MIT License](https://github.com/yoozi/golem/blob/master/LICENSE).

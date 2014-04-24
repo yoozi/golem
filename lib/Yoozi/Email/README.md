@@ -65,4 +65,4 @@ array(5) {
 * local: Local part of this address.
 * domain: Domain name of this address.
 * url: Url for users to log into the email service.
-* listed: Whether this address is listed in the thrid-party email service provider whitelist.
+* listed: Whether this address is listed in the thrid-party email service provider [whitelist](https://github.com/yoozi/golem/blob/master/lib/Yoozi/Email/Address/Parser.php#L28).

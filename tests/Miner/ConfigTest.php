@@ -8,6 +8,10 @@ class ConfigTest extends PHPUnit_Framework_TestCase {
     {
         $items = array(
             'parser'     => 'hybrid',
+            'hybrid'     => array(
+                'primary'   => 'readability',
+                'secendary' => 'meta'
+            ),
             'headers'    => array(
                 'User-Agent' => 'Mozilla/5.0'
             ),

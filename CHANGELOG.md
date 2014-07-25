@@ -1,6 +1,15 @@
 CHANGE LOG
 ==========
 
+## 1.0.3
+
+* Allow to configure parser priority in Hybrid parser mode.
+
+## 1.0.2
+
+* Downgrade illuminate/support from v4.1 to v4.0.
+* Increment jeremykendall/php-domain-parser version to ~1.3.
+
 ## 1.0.1
 
 * Fix invalid composer.json file.

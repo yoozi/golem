@@ -19,7 +19,8 @@
     },
     "replace": {
         "yoozi/email": "self.version",
-        "yoozi/miner": "self.version"
+        "yoozi/miner": "self.version",
+        "yoozi/notification": "self.version"
     },
     "require-dev": {
         "mockery/mockery": "0.9.*",

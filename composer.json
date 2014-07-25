@@ -1,0 +1,35 @@
+{
+    "name": "yoozi/notification",
+    "description": "A simple library to wrap common notification transports, such as email, socket.io and etc.",
+    "keywords": ["yoozi", "golem", "notification", "wrapper"],
+    "homepage": "http://golem.yoozi.cn/",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Saturn HU",
+            "email": "yangg.hu@yoozi.cn",
+            "homepage": "http://www.yoozi.cn/"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "~4.0",
+        "kriswallsmith/buzz": "~0.10"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Yoozi\\Notification": ""
+        }
+    },
+    "target-dir": "Yoozi/Notification",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "minimum-stability": "stable"
+}

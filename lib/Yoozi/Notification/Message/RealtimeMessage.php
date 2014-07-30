@@ -26,6 +26,9 @@ class RealtimeMessage extends AbstractMessage {
                 if (is_object($value)) {
                     return method_exists($value, 'toArray') ? $value->toArray() : (array) $value;
                 }
+
+                return $value;
+
             }, $content);
 
             $content = json_encode($content);

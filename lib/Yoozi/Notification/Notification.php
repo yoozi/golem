@@ -15,21 +15,22 @@ class Notification {
     /**
      * Holds the transport handle.
      *
-     * @var array
+     * @var \Yoozi\Notification\Contracts\Notifiable
      */
     protected $transport;
 
     /**
      * Holds the transport message handle.
      *
-     * @var array
+     * @var mixed
      */
     protected $message;
 
     /**
      * Set the transport to drive the notification.
      *
-     * @param mixed The concrete transport instance.
+     * @param \Yoozi\Notification\Contracts\Notifiable
+     * @param mixed The concrete message instance.
      */
     public function __construct(Notifiable $transport, $message)
     {
@@ -44,7 +45,7 @@ class Notification {
      * @param  \Closure Closure to set the messages.
      * @return mixed
      */
-    public function send($type, Closure $callback)
+    public function send($type, Closure $callback = null)
     {
         if ( ! $this->transport->isValid($type))
         {
@@ -55,7 +56,7 @@ class Notification {
         // notification API.
         $this->message->subject($type);
 
-        return $this->transport->send(call_user_func($callback, $this->message));
+        return $this->transport->send($callback ? call_user_func($callback, $this->message) : $this->message);
     }
 
     /**
@@ -73,7 +74,7 @@ class Notification {
     }
 
     /**
-     * Dynamically set attributes on the trasnport instance.
+     * Dynamically set attributes on the transport instance.
      *
      * @param  string  $key
      * @param  mixed   $value

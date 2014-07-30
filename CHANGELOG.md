@@ -1,6 +1,10 @@
 CHANGE LOG
 ==========
 
+## 1.0.4
+
+* Initial release for [Module Notification](https://github.com/yoozi/notification).
+
 ## 1.0.3
 
 * Allow to configure parser priority in Hybrid parser mode.

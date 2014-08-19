@@ -23,10 +23,10 @@ class Geocoding extends AbstractQuery {
      *
      * @var array
      */
-    protected $segments = [
+    protected $segments = array(
         'endpoint' => 'http://api.map.baidu.com',
         'name'     => 'geocoder',
         'version'  => 'v2',
         'method'   => null,
-    ];
+    );
 }

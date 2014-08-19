@@ -14,12 +14,12 @@ class QueryTest extends PHPUnit_Framework_TestCase {
         $query->set('method', 'test');
         $this->assertEquals($query->get('method'), 'test');
 
-        $segments = [
+        $segments = array(
             'endpoint' => 'http://api.map.baidu.com',
             'name'     => 'location',
             'version'  => null,
             'method'   => 'ip'
-        ];
+        );
 
         $query->fill($segments, 'segments');
         $this->assertEquals($query->get('method'), $segments['method']);

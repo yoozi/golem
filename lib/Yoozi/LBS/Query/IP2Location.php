@@ -23,10 +23,10 @@ class IP2Location extends AbstractQuery {
      *
      * @var array
      */
-    protected $segments = [
+    protected $segments = array(
         'endpoint' => 'http://api.map.baidu.com',
         'name'     => 'location',
         'version'  => null,
         'method'   => 'ip',
-    ];
+    );
 }

@@ -26,7 +26,7 @@ class Place extends AbstractQuery {
      *
      * @var array
      */
-    protected $segments = [
+    protected $segments = array(
         'endpoint' => 'http://api.map.baidu.com',
         'name'     => 'place',
         'version'  => 'v2',
@@ -34,6 +34,6 @@ class Place extends AbstractQuery {
         // @see http://developer.baidu.com/map/webservice-placeapi.htm
         // @see http://developer.baidu.com/map/wiki/index.php?title=webapi/place-suggestion-api
         'method'   => 'search'
-    ];
+    );
 
 }

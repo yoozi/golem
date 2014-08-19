@@ -25,19 +25,19 @@ abstract class AbstractQuery implements QueryInterface {
      *
      * @var array
      */
-    protected $segments = [
+    protected $segments = array(
         'endpoint' => 'http://api.map.baidu.com',
         'name'     => null,
         'version'  => 'v2',
         'method'   => null,
-    ];
+    );
 
     /**
      * Array to be constructed as a querystring.
      *
      * @var array
      */
-    protected $query = [];
+    protected $query = array();
 
     /**
      * Fill the query string array or segments.

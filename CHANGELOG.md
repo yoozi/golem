@@ -1,6 +1,10 @@
 CHANGE LOG
 ==========
 
+## 1.0.6
+
+* Add PHP 5.3.x support for Module LBS.
+
 ## 1.0.5
 
 * Initial release for [Module LBS](https://github.com/yoozi/LBS).

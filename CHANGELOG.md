@@ -1,6 +1,10 @@
 CHANGE LOG
 ==========
 
+## 1.0.5
+
+* Initial release for [Module LBS](https://github.com/yoozi/LBS).
+
 ## 1.0.4
 
 * Initial release for [Module Notification](https://github.com/yoozi/notification).

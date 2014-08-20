@@ -54,7 +54,6 @@ class Search implements ArrayableInterface, JsonableInterface
      * Run the query via HTTP $client and fetch the result in $output format.
      *
      *
-     * @param  string                       $output
      * @param  \Buzz\Client\ClientInterface $client
      * @return \Yoozi\LBS\Search
      */
@@ -76,7 +75,31 @@ class Search implements ArrayableInterface, JsonableInterface
         return $this;
     }
 
-    public function query()
+    /**
+     * Set a URL segment OR query string using "dot" notation.
+     *
+     * <code>
+     * // Set the name of service.
+     * $this->set('name', 'place');
+     * </code>
+     *
+     * @param  string $key
+     * @param  string $val
+     * @return \Yoozi\LBS\Search
+     */
+    public function set($key, $val)
+    {
+        $this->query->set($key, $val);
+
+        return $this;
+    }
+
+    /**
+     * Get the search query.
+     *
+     * @return \Yoozi\LBS\Query\QueryInterface
+     */
+    public function getQuery()
     {
         return $this->query;
     }

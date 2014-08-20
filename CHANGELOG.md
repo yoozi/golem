@@ -1,6 +1,10 @@
 CHANGE LOG
 ==========
 
+## 1.0.7
+
+* Add two methods ``getQuery()`` and ``set()`` for Search Class in Module LBS.
+
 ## 1.0.6
 
 * Add PHP 5.3.x support for Module LBS.

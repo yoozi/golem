@@ -1,6 +1,10 @@
 CHANGE LOG
 ==========
 
+## 1.0.8
+
+* Add [Geoconv](http://developer.baidu.com/map/wiki/index.php?title=webapi/guide/changeposition) Query for [Module LBS](https://github.com/yoozi/LBS).
+
 ## 1.0.7
 
 * Add two methods ``getQuery()`` and ``set()`` for Search Class in Module LBS.

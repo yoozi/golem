@@ -10,15 +10,12 @@
  */
 namespace Yoozi\Email\Address;
 
-use Illuminate\Support\Contracts\ArrayableInterface;
-use Illuminate\Support\Contracts\JsonableInterface;
-
 /**
  * Email address parser.
  *
  * @author Saturn HU <yangg.hu@yoozi.cn>
  */
-class Parser implements ArrayableInterface, JsonableInterface
+class Parser
 {
     /**
      * A list of common used email providers.

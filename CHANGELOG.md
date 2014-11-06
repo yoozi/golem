@@ -1,6 +1,14 @@
 CHANGE LOG
 ==========
 
+## 1.1.0
+
+* Reslove conflicts and bump version.
+
+## 1.0.9
+
+* Remove illuminate/support dependency for [Module Miner](https://github.com/yoozi/miner) and [Module Email](https://github.com/yoozi/email).
+
 ## 1.0.9
 
 * Remove illuminate/support dependency for [Module Miner](https://github.com/yoozi/miner) and [Module Email](https://github.com/yoozi/email).

@@ -1,7 +1,7 @@
 (function ($, undefined) {
 
   // Put custom repo URL's in this object, keyed by repo name.
-  var repoUrls = ["email", "miner"];
+  var repoUrls = ["email", "miner", "LBS", "notification"];
 
   function repoUrl(repo) {
     return repoUrls[repo.name] || repo.html_url;
